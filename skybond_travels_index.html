@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Skybond Travels - Domestic and international holiday packages, flights, hotels and visa services.">
+  <title>Skybond Travels | Your Journey, Our Responsibility</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f7f9fc;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #00000012}
+    nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-size:25px;font-weight:800;letter-spacing:.3px}
+    .logo span{display:block;font-size:11px;letter-spacing:2px;color:#64748b}
+    nav ul{display:flex;gap:24px;list-style:none;font-weight:600}
+    .btn{display:inline-block;padding:12px 20px;border-radius:10px;background:#0b63ce;color:#fff;font-weight:700;border:0;cursor:pointer}
+    .btn.alt{background:#fff;color:#0b63ce;border:2px solid #0b63ce}
+    .hero{padding:90px 0;background:linear-gradient(120deg,#eaf4ff,#fff)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+    .badge{display:inline-block;background:#dceeff;color:#0b63ce;padding:7px 12px;border-radius:20px;font-weight:700;font-size:13px}
+    h1{font-size:clamp(42px,6vw,70px);line-height:1.05;margin:18px 0}
+    h1 span{color:#0b63ce}
+    .hero p{font-size:18px;color:#526174;max-width:650px;margin-bottom:26px}
+    .hero-card{background:#fff;border-radius:22px;padding:28px;box-shadow:0 15px 50px #0b63ce18}
+    .hero-card h3{margin-bottom:15px}
+    .hero-card input,.hero-card select,.hero-card textarea{width:100%;padding:13px;margin:7px 0;border:1px solid #d8e0ea;border-radius:9px}
+    section{padding:72px 0}
+    .section-title{text-align:center;margin-bottom:38px}
+    .section-title h2{font-size:34px}
+    .section-title p{color:#66758a}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 5px 25px #0000000c}
+    .card .pic{height:150px;background:linear-gradient(135deg,#b9dcff,#eef7ff);display:grid;place-items:center;font-size:42px}
+    .card-content{padding:18px}
+    .card h3{margin-bottom:5px}
+    .muted{color:#68768a;font-size:14px}
+    .price{font-weight:800;color:#0b63ce;margin:12px 0}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .feature{background:#fff;padding:24px;border-radius:16px;text-align:center}
+    .feature .icon{font-size:32px}
+    .feature h3{margin:8px 0}
+    .feature p{color:#68768a;font-size:14px}
+    .quote{background:#0d4fa3;color:#fff}
+    .quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+    .quote p{color:#dbeaff}
+    form{background:#fff;padding:25px;border-radius:18px;color:#172033}
+    form input,form select,form textarea{width:100%;padding:13px;margin:7px 0 12px;border:1px solid #d8e0ea;border-radius:9px}
+    footer{background:#101827;color:#dce4ef;padding:45px 0}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+    footer h3{color:#fff;margin-bottom:10px}
+    .whatsapp{position:fixed;right:22px;bottom:22px;background:#20b957;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:28px;box-shadow:0 8px 25px #0003;z-index:20}
+    .small{font-size:13px;color:#9ba9bb}
+    @media(max-width:850px){
+      nav ul{display:none}.hero-grid,.quote-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}.hero{padding:60px 0}
+    }
+    @media(max-width:520px){
+      .cards,.features{grid-template-columns:1fr}section{padding:55px 0}h1{font-size:45px}.footer-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home">SKYBOND TRAVELS<span>YOUR JOURNEY, OUR RESPONSIBILITY</span></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#visa">Visa</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn" href="tel:+919999573485">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">DOMESTIC & INTERNATIONAL HOLIDAYS</span>
+        <h1>Explore the World with <span>Skybond Travels</span></h1>
+        <p>Beautiful holidays, customized itineraries, flights, hotels and visa assistance — all planned around your journey.</p>
+        <a class="btn" href="#packages">Explore Packages</a>
+        <a class="btn alt" href="#contact" style="margin-left:8px">Get Free Quote</a>
+      </div>
+      <div class="hero-card">
+        <h3>Plan Your Trip</h3>
+        <form onsubmit="sendWhatsApp(event)">
+          <input id="name" required placeholder="Your Name">
+          <input id="phone" required placeholder="Mobile Number">
+          <select id="destination" required>
+            <option value="">Select Destination</option>
+            <option>Thailand</option><option>Bali</option><option>Dubai</option>
+            <option>Maldives</option><option>Uzbekistan</option><option>Nepal</option>
+            <option>Kashmir</option><option>Europe</option>
+          </select>
+          <input id="date" type="date">
+          <input id="travellers" type="number" min="1" placeholder="No. of Travellers">
+          <button class="btn" style="width:100%;margin-top:7px">Send Enquiry on WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="destinations">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular Destinations</h2>
+        <p>Handpicked destinations for your next unforgettable holiday.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="pic">🇹🇭</div><div class="card-content"><h3>Thailand</h3><p class="muted">Bangkok • Phuket • Krabi</p></div></div>
+        <div class="card"><div class="pic">🇮🇩</div><div class="card-content"><h3>Bali</h3><p class="muted">Beaches • Temples • Ubud</p></div></div>
+        <div class="card"><div class="pic">🇦🇪</div><div class="card-content"><h3>Dubai</h3><p class="muted">Luxury • Desert • Shopping</p></div></div>
+        <div class="card"><div class="pic">🇲🇻</div><div class="card-content"><h3>Maldives</h3><p class="muted">Resorts • Beaches • Romance</p></div></div>
+        <div class="card"><div class="pic">🇺🇿</div><div class="card-content"><h3>Uzbekistan</h3><p class="muted">Tashkent • Samarkand • Bukhara</p></div></div>
+        <div class="card"><div class="pic">🇳🇵</div><div class="card-content"><h3>Nepal</h3><p class="muted">Kathmandu • Pokhara</p></div></div>
+        <div class="card"><div class="pic">🇮🇳</div><div class="card-content"><h3>Kashmir</h3><p class="muted">Srinagar • Gulmarg • Sonmarg</p></div></div>
+        <div class="card"><div class="pic">🇨🇭</div><div class="card-content"><h3>Europe</h3><p class="muted">Switzerland • France • Italy</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" style="background:#eef5fc">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Holiday Packages</h2>
+        <p>Prices can be updated whenever your rates change.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="pic">🌴</div><div class="card-content"><h3>Thailand Escape</h3><p class="muted">4 Nights / 5 Days</p><div class="price">Starting from ₹XX,XXX</div><a class="btn" href="#contact">Get Quote</a></div></div>
+        <div class="card"><div class="pic">🌺</div><div class="card-content"><h3>Bali Holiday</h3><p class="muted">5 Nights / 6 Days</p><div class="price">Starting from ₹XX,XXX</div><a class="btn" href="#contact">Get Quote</a></div></div>
+        <div class="card"><div class="pic">🏙️</div><div class="card-content"><h3>Dubai Delight</h3><p class="muted">4 Nights / 5 Days</p><div class="price">Starting from ₹XX,XXX</div><a class="btn" href="#contact">Get Quote</a></div></div>
+        <div class="card"><div class="pic">🏝️</div><div class="card-content"><h3>Maldives Escape</h3><p class="muted">3 Nights / 4 Days</p><div class="price">Starting from ₹XX,XXX</div><a class="btn" href="#contact">Get Quote</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visa">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Travel Services</h2>
+        <p>Everything you need for a smooth journey.</p>
+      </div>
+      <div class="features">
+        <div class="feature"><div class="icon">✈️</div><h3>Flight Booking</h3><p>Domestic and international flight assistance.</p></div>
+        <div class="feature"><div class="icon">🏨</div><h3>Hotels</h3><p>Hotel reservations for every budget and style.</p></div>
+        <div class="feature"><div class="icon">🛂</div><h3>Visa Assistance</h3><p>Guidance for tourist and other travel visas.</p></div>
+        <div class="feature"><div class="icon">🚐</div><h3>Transfers & Tours</h3><p>Airport transfers, sightseeing and activities.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="contact">
+    <div class="container quote-grid">
+      <div>
+        <h2>Let's Plan Your Next Journey</h2>
+        <p style="margin-top:12px">Tell us your destination, travel dates and requirements. Our team will prepare a personalized quotation.</p>
+        <p style="margin-top:22px"><strong>📞 9999573485</strong><br><strong>✉ skybondtravels@hotmail.com</strong></p>
+      </div>
+      <form onsubmit="sendWhatsApp(event)">
+        <input id="name2" required placeholder="Full Name">
+        <input id="phone2" required placeholder="Phone Number">
+        <input id="destination2" required placeholder="Destination">
+        <input id="date2" type="date">
+        <input id="travellers2" type="number" min="1" placeholder="Number of Travellers">
+        <textarea id="message2" rows="4" placeholder="Tell us what you need"></textarea>
+        <button class="btn" style="width:100%">Get Free Quote</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>Skybond Travels</h3>
+      <p>Your Journey, Our Responsibility.</p>
+      <p class="small" style="margin-top:10px">Domestic & international holidays, flights, hotels, visa assistance and customized travel services.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="#destinations">Destinations</a></p>
+      <p><a href="#packages">Packages</a></p>
+      <p><a href="#visa">Services</a></p>
+      <p><a href="#contact">Contact</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>📞 9999573485</p>
+      <p>✉ skybondtravels@hotmail.com</p>
+      <p>📍 Faridabad, Haryana</p>
+    </div>
+  </div>
+  <div class="container" style="border-top:1px solid #263247;margin-top:30px;padding-top:20px">
+    <p class="small">© 2026 Skybond Travels. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919999573485" target="_blank" aria-label="WhatsApp">◉</a>
+
+<script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  const n = document.getElementById('name')?.value || document.getElementById('name2')?.value || '';
+  const p = document.getElementById('phone')?.value || document.getElementById('phone2')?.value || '';
+  const d = document.getElementById('destination')?.value || document.getElementById('destination2')?.value || '';
+  const date = document.getElementById('date')?.value || document.getElementById('date2')?.value || '';
+  const t = document.getElementById('travellers')?.value || document.getElementById('travellers2')?.value || '';
+  const m = document.getElementById('message2')?.value || '';
+  const text = `Hello Skybond Travels, I want a travel quotation.%0A%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0ADestination: ${encodeURIComponent(d)}%0ATravel Date: ${encodeURIComponent(date)}%0ATravellers: ${encodeURIComponent(t)}%0ARequirements: ${encodeURIComponent(m)}`;
+  window.open('https://wa.me/919999573485?text=' + text, '_blank');
+}
+</script>
+</body>
+</html>
