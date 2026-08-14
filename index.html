@@ -11,6 +11,15 @@
 .portal-search input{padding:14px;border:1px solid #ddd;border-radius:8px;width:100%;box-sizing:border-box}
 .section-space{padding:45px 0}.package-mini{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
 </style>
+
+<style>
+.portal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.portal-card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 5px 25px #0002}
+.portal-card h3{margin:8px 0}.portal-card p{color:#555;line-height:1.55}
+.country-code{font-size:30px}.small-label{text-transform:uppercase;font-size:11px;letter-spacing:.08em;opacity:.6;font-weight:700}
+.honey-slider{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 4px 20px}
+.honey-card{flex:0 0 290px;scroll-snap-align:start;background:#fff;border-radius:16px;padding:22px;box-shadow:0 5px 25px #0002}
+</style>
 </head><body>
 <header><div class="wrap nav">
 <a href="index.html"><img class="logo" src="assets/skybond-logo.jpeg" alt="Skybond Travels"></a>
@@ -29,12 +38,55 @@
 <section class="section-space"><div class="wrap">
 <div class="title"><h2>Featured Holiday Packages</h2><p>Explore our handpicked trips and ask us for the latest price and availability.</p></div>
 <div class="v4-grid">
-<div class="v4-card"><h3>🇹🇭 Bangkok 4N/5D</h3><p>City sightseeing, temples, Safari World, shopping and comfortable hotel stay.</p><a class="btn" href="bangkok-4n5d.html">View Package & Enquire</a></div>
-<div class="v4-card"><h3>🇮🇩 Bali + Gili 6N/7D</h3><p>Bali water sports, Uluwatu, Ubud, Gili Island, Tanah Lot and island leisure.</p><a class="btn" href="bali-gili-6n7d.html">View Package & Enquire</a></div>
-<div class="v4-card"><h3>🇦🇪 Dubai 5N/6D</h3><p>5★ stay, Burj Khalifa, desert safari, Marina dinner cruise and Abu Dhabi.</p><a class="btn" href="dubai-5n6d.html">View Package & Enquire</a></div>
-<div class="v4-card"><h3>🇲🇻 Maldives 3N/4D</h3><p>Villa Nautica island escape with beach, lagoon, resort facilities and transfers.</p><a class="btn" href="maldives-3n4d.html">View Package & Enquire</a></div>
+<div class="v4-card"><h3>🇹🇭 Bangkok 4N/5D</h3><p>City sightseeing, temples, Safari World, shopping and comfortable hotel stay.</p><a class="btn" href="package-bangkok.html">View Package & Enquire</a></div>
+<div class="v4-card"><h3>🇮🇩 Bali + Gili 6N/7D</h3><p>Bali water sports, Uluwatu, Ubud, Gili Island, Tanah Lot and island leisure.</p><a class="btn" href="package-bali-gili.html">View Package & Enquire</a></div>
+<div class="v4-card"><h3>🇦🇪 Dubai 5N/6D</h3><p>5★ stay, Burj Khalifa, desert safari, Marina dinner cruise and Abu Dhabi.</p><a class="btn" href="package-dubai.html">View Package & Enquire</a></div>
+<div class="v4-card"><h3>🇲🇻 Maldives 3N/4D</h3><p>Villa Nautica island escape with beach, lagoon, resort facilities and transfers.</p><a class="btn" href="package-maldives.html">View Package & Enquire</a></div>
 </div></div></section>
 
+<section class="catalog"><div class="wrap"><div class="title"><h2>🌍 International Holidays</h2><p>Swipe through our popular international packages.</p></div>
+<div class="slider-wrap"><div class="slider" id="homeIntl"><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1000&q=80" alt="Thailand 4N/5D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Thailand 4N/5D</h3>
+<p>Bangkok temples, city sightseeing, Safari World, shopping and leisure.</p><a class="btn" href="contact.html?package=Thailand 4N/5D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=80" alt="Bali + Gili Island 6N/7D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Bali + Gili Island 6N/7D</h3>
+<p>Water sports, Uluwatu, Ubud, Gili Island, Tanah Lot and island leisure.</p><a class="btn" href="contact.html?package=Bali + Gili Island 6N/7D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80" alt="Dubai 5N/6D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Dubai 5N/6D</h3>
+<p>Burj Khalifa, desert safari, Marina dinner cruise, city tour and Abu Dhabi.</p><a class="btn" href="contact.html?package=Dubai 5N/6D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=80" alt="Maldives 3N/4D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Maldives 3N/4D</h3>
+<p>Villa stay, beach, lagoon experiences, resort amenities and transfers.</p><a class="btn" href="contact.html?package=Maldives 3N/4D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1000&q=80" alt="Singapore 4N/5D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Singapore 4N/5D</h3>
+<p>Marina Bay, Sentosa, city highlights, shopping and leisure.</p><a class="btn" href="contact.html?package=Singapore 4N/5D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1000&q=80" alt="Vietnam Classic 5N/6D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Vietnam Classic 5N/6D</h3>
+<p>Hanoi, Halong Bay and cultural experiences with comfortable stays.</p><a class="btn" href="contact.html?package=Vietnam Classic 5N/6D">Enquiry Now</a></div></article></div></div>
+<p class="view-all"><a class="btn" href="packages.html">View All International Packages</a></p></div></section>
+<section class="catalog"><div class="wrap"><div class="title"><h2>🇮🇳 India Holidays</h2><p>Popular domestic destinations for families, couples and groups.</p></div>
+<div class="slider-wrap"><div class="slider" id="homeDom"><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1595815771614-ade9d652a5a3?auto=format&fit=crop&w=1000&q=80" alt="Kashmir 5N/6D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Kashmir 5N/6D</h3>
+<p>Srinagar, Gulmarg, Pahalgam and scenic Kashmir valleys.</p><a class="btn" href="contact.html?package=Kashmir 5N/6D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=80" alt="Kerala Beauty 5N/6D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Kerala Beauty 5N/6D</h3>
+<p>Munnar, Thekkady, Alleppey and Kerala hills and backwaters.</p><a class="btn" href="contact.html?package=Kerala Beauty 5N/6D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1000&q=80" alt="Golden Rajasthan 5N/6D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Golden Rajasthan 5N/6D</h3>
+<p>Jaipur, Jodhpur and Rajasthan forts, palaces and local culture.</p><a class="btn" href="contact.html?package=Golden Rajasthan 5N/6D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=80" alt="Goa Holiday 4N/5D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Goa Holiday 4N/5D</h3>
+<p>Beaches, local sightseeing, leisure and optional water activities.</p><a class="btn" href="contact.html?package=Goa Holiday 4N/5D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1000&q=80" alt="Himachal Highlights 5N/6D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Himachal Highlights 5N/6D</h3>
+<p>Shimla, Manali and Himalayan scenery with sightseeing.</p><a class="btn" href="contact.html?package=Himachal Highlights 5N/6D">Enquiry Now</a></div></article><article class="pkg-card">
+<img src="https://images.unsplash.com/photo-1588401273872-959c2b9a0e4a?auto=format&fit=crop&w=1000&q=80" alt="Andaman Island Escape 5N/6D" loading="lazy">
+<div class="pkg-body"><span class="tag">Holiday Package</span><h3>Andaman Island Escape 5N/6D</h3>
+<p>Island beaches, Port Blair, Havelock and tropical leisure.</p><a class="btn" href="contact.html?package=Andaman Island Escape 5N/6D">Enquiry Now</a></div></article></div></div>
+<p class="view-all"><a class="btn" href="packages.html">View All Domestic Packages</a></p></div></section>
+<section class="catalog"><div class="wrap"><div class="title"><h2>❤️ Honeymoon Packages</h2><p>Romantic destinations for couples.</p></div><div class="honey-slider"><arti</div><p><a class="btn" href="honeymoon.html">View All Honeymoon Packages</a></p></div></section><section class="catalog"><div class="wrap"><div class="title"><h2>🛂 Visa Profiles</h2><p>Select your country and ask us about the current visa process.</p></div><div class="portal-grid"><article class="portal-card"><div class="country-code">🇦🇪</div><h3>UAE</h3><p>Dubai Tourist Visa</p><a href="visa.html">View Visa Profile →</a></article><article class="portal-card"><div class="country-code">🇹🇭</div><h3>Thailand</h3><p>Thailand Tourist Visa</p><a href="visa.html">View Visa Profile →</a></article><article class="portal-card"><div class="country-code">🇸🇬</div><h3>Singapore</h3><p>Singapore Tourist Visa</p><a href="visa.html">View Visa Profile →</a></article><article class="portal-card"><div class="country-code">🇮🇩</div><h3>Indonesia</h3><p>Indonesia Tourist Visa</p><a href="visa.html">View Visa Profile →</a></article><article class="portal-card"><div class="country-code">🇲🇾</div><h3>Malaysia</h3><p>Malaysia Tourist Visa</p><a href="visa.html">View Visa Profile →</a></article><article class="portal-card"><div class="country-code">🇻🇳</div><h3>Vietnam</h3><p>Vietnam Tourist Visa</p><a href="visa.html">View Visa Profile →</a></article><article class="portal-card"><div class="country-code">🇦🇿</div><h3>Azerbaijan</h3><p>Azerbaijan Visa</p><a href="visa.html">View Visa Profile →</a></article><article class="portal-card"><div class="country-code">🇬🇪</div><h3>Georgia</h3><p>Georgia Visa</p><a href="visa.html">View Visa Profile →</a></article><article class="portal-card"><div class="country-code">🇹🇷</div><h3>Turkey</h3><p>Turkey Tourist Visa</p><a href="visa.html">View Visa Profile →</a></article><article class="portal-card"><div class="country-code">🇱🇰</div><h3>Sri Lanka</h3><p>Sri Lanka Visa</p><a href="visa.html">View Visa Profile →</a></article></div><p style="margin-top:20px"><a class="btn" href="visa.html">View All Countries</a></p></div></section>
 <section class="section-space"><div class="wrap">
 <div class="title"><h2>Explore Skybond Travels</h2><p>Everything you need to plan your holiday.</p></div>
 <div class="v4-grid">
