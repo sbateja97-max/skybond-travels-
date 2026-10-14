@@ -1,15 +1,16 @@
-# Skybond Travels Website V2
+SKYBOND TRAVELS — SINGLE-PAGE WEBSITE
 
-Upload all files and the `assets` folder to your GitHub Pages repository.
+Files:
+- index.html: complete responsive one-page website. No build tools required.
 
-Included:
-- Skybond Travels logo
-- WhatsApp number +91 9999573485
-- Email skybondtravels@hotmail.com
-- Featured package prices:
-  - Thailand 4N/5D: ₹45,000
-  - Bali 5N/6D: ₹74,999
-  - Dubai 4N/5D: ₹59,999
-  - Maldives 3N/4D: ₹1,09,000
+IMPORTANT BEFORE PUBLISHING:
+1. Make a backup of the current GitHub repository/files first.
+2. This is a one-page replacement design. It does not delete your GitHub repository.
+3. Upload/replace the repository's published index.html with this index.html. If you want to remove old pages from the live website, remove their old HTML files only after confirming you have a backup.
+4. Check Settings > Pages to confirm which branch and folder are being published.
+5. After committing changes, allow a few minutes for GitHub Pages to deploy.
+6. WhatsApp enquiry links are set to +91 99995 73485 (919999573485). Confirm this is the correct business WhatsApp number before publishing.
+7. Destination photos load from Unsplash over the internet.
+8. The enquiry form opens WhatsApp with a prefilled message; customers still need to press Send inside WhatsApp. It does not store enquiries on a server.
 
-Note: Package prices are displayed as provided by Skybond Travels. Confirm inclusions, taxes, availability and final quotation before booking.
+To test: open index.html in a browser.
